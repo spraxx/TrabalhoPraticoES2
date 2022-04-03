@@ -1,3 +1,4 @@
+package com.es2.singleton;
 
 public class bdConnection {
 
@@ -22,11 +23,11 @@ public class bdConnection {
         this.path = path;
     }
 
-    public java.lang.String getPath(){
+    public String getPath(){
         return path;
     }
 
-    public java.lang.String getConnectionString(){
+    public String getConnectionString(){
         return connectionString;
     }
 
