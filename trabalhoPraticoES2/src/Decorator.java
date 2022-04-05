@@ -2,7 +2,9 @@
 
 public class Decorator implements sapatoFinal
 {
+
     sapatoFinal sapato1;
+
     public Decorator(sapatoFinal sapato)
     {
         this.sapato1 = sapato;
