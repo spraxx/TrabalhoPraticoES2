@@ -1,4 +1,4 @@
-
+package Decorator;
 
 public class Decorator implements sapatoFinal
 {

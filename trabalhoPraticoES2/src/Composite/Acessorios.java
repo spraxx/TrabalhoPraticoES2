@@ -1,3 +1,5 @@
+package Composite;
+
 public class Acessorios extends Sapato{
     public Acessorios(){};
     private String fio;

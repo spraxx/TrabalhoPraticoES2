@@ -1,10 +1,11 @@
-package com.es2.singleton;
+package Singleton;
 
 public class bdConnection {
 
     private bdConnection(){}
 
-    private String path;
+    private String username;
+    private String password;
     private String connectionString;
 
     private static bdConnection instance = new bdConnection();
@@ -19,12 +20,20 @@ public class bdConnection {
     }
 
 
-    public void setPath(String path){
-        this.path = path;
+    public String getUsername() {
+        return username;
     }
 
-    public String getPath(){
-        return path;
+    public String getPassword() {
+        return password;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getConnectionString(){

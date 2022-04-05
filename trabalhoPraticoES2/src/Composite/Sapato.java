@@ -1,4 +1,4 @@
-
+package Composite;
 
 public abstract class Sapato {
     private String fabricar;

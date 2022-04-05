@@ -1,3 +1,4 @@
+package Composite;
 import java.util.ArrayList;
 
 public class baseSapato extends Sapato{
