@@ -1,4 +1,5 @@
-package Decorator;
+package Bridge;
+import Decorator.sapatoFinal;
 
 public class OutSource implements sapatoFinal{
     private String outsource;
