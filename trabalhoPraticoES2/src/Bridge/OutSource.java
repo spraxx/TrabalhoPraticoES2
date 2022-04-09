@@ -1,16 +1,30 @@
 package Bridge;
-import Decorator.sapatoFinal;
 
-public class OutSource implements sapatoFinal{
-    private String outsource;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class OutSource implements Encomenda {
+    protected LinkedHashMap<String,String> encomenda = new LinkedHashMap<>();
+    int count = 0;
     public OutSource() {
     }
 
-    public String getOutsource() {
-        return outsource;
-    }
+   public String getEncomenda(String encomendaID)
+   {
+       String en = " ";
+       for(Map.Entry<String,String> entry : this.encomenda.entrySet())
+       {
+           en = en.concat(entry.getValue());
+       }
+       return en;
+   }
 
-    public void setOutsource(String outsource) {
-        this.outsource = outsource;
-    }
+   public String setEncomenda(String encomenda)
+   {
+       String encomendaID = "Id da encomenda" + count;
+       this.encomenda.put(encomendaID,encomenda);
+       count++;
+       return encomendaID;
+   }
 }
