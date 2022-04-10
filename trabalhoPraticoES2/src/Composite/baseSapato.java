@@ -24,4 +24,8 @@ public class baseSapato extends Sapato{
     }
 
 
+    @Override
+    public void montar(String sapato, String acessorios) {
+
+    }
 }

@@ -1,7 +1,7 @@
 package Composite;
 import Decorator.sapatoFinal;
 
-public abstract class Sapato extends sapatoFinal {
+public abstract class Sapato implements sapatoFinal {
     private String fabricar;
 
     public Sapato(){}

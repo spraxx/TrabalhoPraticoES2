@@ -40,4 +40,9 @@ public class Acessorios extends Sapato{
         System.out.println(fio + tecido + cortica);
 
     }
+
+    @Override
+    public void montar(String sapato, String acessorios) {
+
+    }
 }

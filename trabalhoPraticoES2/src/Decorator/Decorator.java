@@ -1,6 +1,6 @@
 package Decorator;
 
-public class Decorator extends sapatoFinal
+public class Decorator implements sapatoFinal
 {
 
     sapatoFinal sapato1;

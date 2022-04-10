@@ -22,4 +22,9 @@ public class Palmilha extends Sapato{
             Palmilha.showOptions();
         }
     }
+
+    @Override
+    public void montar(String sapato, String acessorios) {
+
+    }
 }
