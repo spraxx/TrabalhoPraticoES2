@@ -5,7 +5,7 @@ package Bridge;
 
 public class OutSource implements Encomenda {
 
-    int count = 0;
+    
     String encomendaOutsource;
     public OutSource() {
     }
