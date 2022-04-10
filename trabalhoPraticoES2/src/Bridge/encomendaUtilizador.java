@@ -6,14 +6,14 @@ import java.util.HashMap;
 
 public class encomendaUtilizador implements Encomenda{
 
-    int count = 0;
+    
     String encomenda;
     protected HashMap<compositoSapato, String> sapatos = new HashMap<>();
    public encomendaUtilizador(){}
 
-    public void addSapatos(compositoSapato compositoSapato, String encomenda )
+    public void addSapatos(compositoSapato sapato, String encomenda )
     {
-        sapatos.put(compositoSapato, encomenda);
+        sapatos.put(sapato, encomenda);
     }
 
 
