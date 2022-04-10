@@ -2,24 +2,24 @@ package Composite;
 import java.util.ArrayList;
 
 public class componenteSapato extends compositoSapato {
-    private final ArrayList<compositoSapato> baseCompositoSapatoes = new ArrayList<compositoSapato>();
+    private final ArrayList<compositoSapato> componenteSapatos = new ArrayList<compositoSapato>();
     public componenteSapato(){}
     public void addChild(compositoSapato child)
     {
-        baseCompositoSapatoes.add(child);
+        componenteSapatos.add(child);
     }
     public void removeChild(compositoSapato child)
     {
-        baseCompositoSapatoes.remove(child);
+        componenteSapatos.remove(child);
     }
 
     public void showOptions()
     {
         System.out.println(getFabricar());
 
-        for(compositoSapato baseCompositoSapato : baseCompositoSapatoes)
+        for(compositoSapato componenteSapato : componenteSapatos)
         {
-            baseCompositoSapato.showOptions();
+            componenteSapato.showOptions();
         }
     }
 

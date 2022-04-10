@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class encomendaUtilizador implements Encomenda{
 
-    
+
     String encomenda;
     protected HashMap<compositoSapato, String> sapatos = new HashMap<>();
    public encomendaUtilizador(){}
