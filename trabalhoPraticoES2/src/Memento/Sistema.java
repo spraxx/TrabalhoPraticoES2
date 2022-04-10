@@ -1,6 +1,8 @@
 package Memento;
 
-public class Sistema {
+import Composite.Sapato;
+
+public class Sistema extends Sapato {
     private  String versao;
 
     public void setVersao(String versao)
@@ -18,5 +20,10 @@ public class Sistema {
     {
         versao = v.getVersao();
         System.out.println("Sistema: versao depois de restaurada " + versao);
+    }
+
+    @Override
+    public void showOptions() {
+
     }
 }

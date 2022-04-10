@@ -1,6 +1,6 @@
 package Decorator;
 
-public class impressaoPadroes extends Decorator implements sapatoFinal{
+public class impressaoPadroes extends Decorator{
     public impressaoPadroes (sapatoFinal sapato)
     {
         super(sapato);
