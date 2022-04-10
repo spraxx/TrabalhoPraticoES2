@@ -1,14 +1,29 @@
 package Bridge;
 
+import Composite.compositoSapato;
+
+import java.util.HashMap;
+
 public class encomendaUtilizador implements Encomenda{
-    //ver no breakit class que o utilizador interage
-    @Override
-    public String getEncomenda(String encomendaID) {
-        return null;
+
+    int count = 0;
+    String encomenda;
+    protected HashMap<compositoSapato, String> sapatos = new HashMap<>();
+   public encomendaUtilizador(){}
+
+    public void addSapatos(compositoSapato compositoSapato, String encomenda )
+    {
+        sapatos.put(compositoSapato, encomenda);
     }
 
-    @Override
-    public String setEncomenda(String encomenda) {
-        return null;
+
+    public String getEncomenda() {
+        return encomenda;
+    }
+
+
+    public void setEncomenda(String encomenda) {
+        this.encomenda = encomenda;
+
     }
 }

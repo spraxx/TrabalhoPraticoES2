@@ -1,20 +1,20 @@
 package Memento;
 
-import Composite.Sapato;
+import Composite.compositoSapato;
 
 import java.util.HashMap;
 
-public class Sistema extends Sapato {
+public class Sistema extends compositoSapato {
     private  String versao;
-    HashMap <Sapato, String> sapatos = new HashMap();
+    HashMap <compositoSapato, String> sapatos = new HashMap();
     public void setVersao(String versao)
     {
         System.out.println("Sistema: criar modelo de versao: " + versao);
         this.versao = versao;
     }
-    public void adicionarSapatosistema(Sapato sapato, String versao)
+    public void adicionarSapatosistema(compositoSapato compositoSapato, String versao)
     {
-        sapatos.put(sapato, versao);
+        sapatos.put(compositoSapato, versao);
     }
 
     public versaoSapato save()
@@ -30,6 +30,11 @@ public class Sistema extends Sapato {
 
     @Override
     public void showOptions() {
+
+    }
+
+    @Override
+    public void montar(String sapato, String acessorios) {
 
     }
 }

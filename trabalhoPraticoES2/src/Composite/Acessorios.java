@@ -1,6 +1,6 @@
 package Composite;
 
-public class Acessorios extends Sapato{
+public class Acessorios extends compositoSapato {
     public Acessorios(){};
     private String fio;
     private String cortica;

@@ -1,10 +1,10 @@
 package Composite;
 import Decorator.sapatoFinal;
 
-public abstract class Sapato implements sapatoFinal {
+public abstract class compositoSapato implements sapatoFinal {
     private String fabricar;
 
-    public Sapato(){}
+    public compositoSapato(){}
 
     public String getFabricar()
     {
